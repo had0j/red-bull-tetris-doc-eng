@@ -1,51 +1,52 @@
-# Red Bull Tetris 非官方规则文档
+# Red Bull Tetris unofficial rules document
+((TN = translation note))
 
-游戏链接：https://www.redbull.com/us-en/events/red-bull-tetris-united-states
+Game link: https://www.redbull.com/us-en/events/red-bull-tetris-united-states
 
-注：只有触屏控制，电脑想玩的话浏览器f12开发者模式切到触屏布局，然后用鼠标拖着玩
+Note: Only has touch controls. To play on computer press F12 to open DevTools on browser, toggle device toolbar ((TN: or press Ctrl+Shift+M)), then play by dragging the cursor.
 
-## 控制
+## Controls
 
-滑动移动，点击旋转，下拉软降（两格距离），松手时如果松手前一会有明显的上拉/下拉运动就暂存/硬降
+Swipe to move, tap to rotate, swipe down to soft drop (two cells distance). When releasing, if there was a noticeable up-swipe/down-swipe movement a moment before the release then hold/hard drop.
 
-重力为一秒一格，任意操作可刷新锁定延迟，有无限上踢bug
+Gravity is one cell per second. Any input can reset lock delay, and there is an infinite up-kick bug.
 
-## 得分
+## Scoring
 
-软降一格+1，硬降每格+2
++1 per cell for soft drop, +2 per cell for hard drop.
 
-消1/2/3/4+得100/300/500/800分
+Clearing 1/2/3/4+ lines give 100/300/500/800 points respectively.
 
-T0/1/2/3得200/800/1200/1600分
+T0/1/2/3 give 200/800/1200/1600 points respectively. ((TN: "T" short for T-Spin))
 
-消除每个道具格+1000分
+Clearing a power-up gives an additional +1000 points.
 
-注意Tspin的判定条件是方块最后一次运动为旋转，且使用了第五踢，仅此而已
+Note that the only criterion for a T piece to be considered a T-Spin is that the piece's last movement was a rotation using the fifth-kick.
 
-另注：不消行的T0也属于后文两个倍率能量与道具能量的“任意消行动作”
+Another note: non-clear T0's are also part of "any clear action" in the multiplier energy and power-up energy sections below.
 
-除了软降和硬降外的得分会获得倍率加成，初始为x1，获得倍率能量后可以增加
+Scoring aside from soft drop and hard drop points are increased by multiplier, starting with x1, being able to increase after receiving multiplier energy.
 
-没有连击，没有B2B，没有全消
+There is no combo system, B2B, or Perfect Clears.
 
-## 倍率能量
+## Multiplier energy
 
-任意消行动作+4，满20后倍率+1，清空倍率能量
+Any clear action gives +4. After reaching 20, the multiplier is increased by +1 and multiplier energy is cleared.
 
-能量会随着时间慢慢流失，x1至x6流失很慢几乎不掉，x7开始能量条变红，流失速度显著加快，很难再升
+Energy will gradually deplete over time. x1 to x6 has slower depletion, whereas starting from x7 the energy bar becomes red and depletion noticeably speeds up, causing it to be harder to increase.
 
-## 道具能量
+## Power-up energy
 
-落块+1，任意消行动作+5
+Placing a piece adds +1, and any clear action adds +5.
 
-距离上一次落块超过2秒后，随时间自动增加（每秒约0.27，准确数据是74秒到20）
+After two seconds have passed since the last placement, power-up energy automatically increases over time (around 0.27 per second, or for accuracy 74 seconds to 20).
 
-满20后下一块变为道具块（包含一个道具格），清空道具能量
+After reaching 20 the next piece becomes a power-up piece (which has one power-up block) and power-up energy is cleared.
 
-## 道具效果
+## Power-up effects
 
-道具格被消除时会触发下列三种效果（就按下面这个固定顺序）：
+When power-up blocks are cleared the following three effects are triggered (following the fixed order below) ((TN: clearing power-ups out of order causes the effects to be out of order too)):
 
-1. Shifter：所有格子“左 下 左”推三次，如果填满了行会自动消除（也可以是“右 下 右”或者“两旁 下 两旁”）
-2. Pusher：升起4行直列垃圾，然后清除场地靠上6行空间
-3. Filter：把场地里的几乎所有孔洞直接填满
+1. Shifter: All blocks are shifted either left, down, left; right, down, right; or both sides, down, both sides, then filled rows are automatically cleared.
+2. Pusher: Four rows of ((TN: clean)) garbage rise, then the six highest rows in the playfield ((TN: i.e. 15&ndash;20)) are cleared.
+3. Filler: Directly fill nearly every hole in the stack.
