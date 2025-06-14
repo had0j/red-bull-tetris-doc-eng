@@ -9,7 +9,11 @@ Note: Only has touch controls. To play on computer press F12 to open DevTools on
 
 Swipe to move, tap to rotate, swipe down to soft drop (two cells distance). When releasing, if there was a noticeable up-swipe/down-swipe movement a moment before the release then hold/hard drop.
 
-Gravity is one cell per second. Any input can reset lock delay, and there is an infinite up-kick bug.
+There is one hold slot and one next piece. Gravity is one cell per second. Any input can reset lock delay, and there is an infinite up-kick bug.
+
+## Objective
+
+Score as much points within a three-minute game.
 
 ## Scoring
 
@@ -33,7 +37,7 @@ There is no combo system, B2B, or Perfect Clears.
 
 Any clear action gives +4. After reaching 20, the multiplier is increased by +1 and multiplier energy is cleared.
 
-Energy will gradually deplete over time. x1 to x6 has slower depletion, whereas starting from x7 the energy bar becomes red and depletion noticeably speeds up, causing it to be harder to increase.
+Energy will gradually deplete over time. From ×1 to ×10 the speed of energy depletion increases, and the color of the energy bar progresses from blue to purple to red to orange to yellow.
 
 ## Power-up energy
 
@@ -47,6 +51,12 @@ After reaching 20 the next piece becomes a power-up piece (which has one power-u
 
 When power-up blocks are cleared the following three effects are triggered (following the fixed order below) ((TN: clearing power-ups out of order causes the effects to be out of order too)):
 
+## Golden I Tetrimino
+
+Once the timer reaches 1:30, the third next piece (despite not being visible) turns into a golden I piece with four golden blocks.
+
+For every golden block cleared +4 multiplier is rewarded ((TN: not sure what this means)) and +1000 points are added
+
 1. Shifter: All blocks are shifted either left, down, left; right, down, right; or both sides, down, both sides, then filled rows are automatically cleared.
-2. Pusher: Four rows of ((TN: clean)) garbage rise, then the six highest rows of the stack are cleared. ((TN: doesn't seem to always be consistent, sometimes an entire column gets cleared?))
+2. Pusher: Four rows of ((TN: clean)) garbage rise, then the six highest rows of the stack are cleared. ((TN: doesn't seem to be consistent))
 3. Filler: Directly fill nearly every hole in the stack.
