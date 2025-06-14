@@ -51,12 +51,13 @@ After reaching 20 the next piece becomes a power-up piece (which has one power-u
 
 When power-up blocks are cleared the following three effects are triggered (following the fixed order below) ((TN: clearing power-ups out of order causes the effects to be out of order too)):
 
+1. Shifter: All blocks are shifted either left, down, left; right, down, right; or both sides, down, both sides, then filled rows are automatically cleared.
+2. Pusher: Four rows of ((TN: clean)) garbage rise, then the six highest rows of the stack are cleared. ((TN: anecdotally it seemes to clear the top half of the board and the entire column the well spawns at))
+3. Filler: Directly fill nearly every hole in the stack.
+
 ## Golden I Tetrimino
 
 Once the timer reaches 1:30, the third next piece (despite not being visible) turns into a golden I piece with four golden blocks.
 
 For every golden block cleared +4 multiplier is rewarded ((TN: not sure what this means)) and +1000 points are added
 
-1. Shifter: All blocks are shifted either left, down, left; right, down, right; or both sides, down, both sides, then filled rows are automatically cleared.
-2. Pusher: Four rows of ((TN: clean)) garbage rise, then the six highest rows of the stack are cleared. ((TN: anecdotally it seemes to clear the top half of the board and the entire column the well spawns at))
-3. Filler: Directly fill nearly every hole in the stack.
